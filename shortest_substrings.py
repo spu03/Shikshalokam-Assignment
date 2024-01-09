@@ -1,4 +1,4 @@
-def shortest_substrings(s, x):
+def shortest_substring(s, x):
     substrings = []
     for i in range(len(s)):
         for j in range(i + x, len(s) + 1):
@@ -8,7 +8,7 @@ def shortest_substrings(s, x):
     return substrings
 
 def print_shortest_substrings(s, x):
-    substrings = shortest_substrings(s, x)
+    substrings = shortest_substring(s, x)
     if not substrings:
         print("Answer: not-found")
     else:
